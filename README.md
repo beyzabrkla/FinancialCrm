@@ -38,3 +38,17 @@ Giriş işlemi başarıyla tamamlandıktan sonra kullanıcıyı karşılayan Gen
 - 🧁 Fatura Durumları Grafiği: Doughnut chart ile fatura türlerine göre tutar analizi
 - 🔄 Dinamik Fatura Bilgisi: Timer ile döngüsel olarak gösterilen fatura tutarları
 - 🧭 Modül Geçişleri: Bankalar, Faturalar, Giderler, İşlemler ve Ayarlar formlarına geçiş
+
+### 🧠 Teknik Detaylar
+Entity Framework- FinancialCrmDbEntities ile veritabanı bağlantısı sağlanır
+LINQ - Banka ve fatura verileri sorgulanır ve grafiklere aktarılır
+Chart API-  System.Windows.Forms.DataVisualization.Charting ile grafik oluşturulur
+Timer - Fatura bilgileri döngüsel olarak güncellenir
+Form Geçişleri - Her modül için ShowDialog() ile geçiş yapılır ve kullanıcı aktarılır
+
+### 🚀 Kullanım Akışı
+- Kullanıcı giriş yapar → FrmLogin
+- FrmDashboard formu açılır ve kullanıcı nesnesi aktarılır
+- Dashboard yüklenirken veriler sorgulanır ve görselleştirilir
+- Kullanıcı modüller arasında geçiş yapabilir veya uygulamadan çıkabilir
+
