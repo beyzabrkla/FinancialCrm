@@ -24,3 +24,17 @@ Bu proje, finansal kontrol sistemine kullanıcı girişi sağlayan bir Windows F
 - Veritabanında eşleşen kullanıcı aranır.
 - Giriş başarılıysa LoggedInUser atanır ve form kapanır.
 - Giriş başarısızsa uyarı mesajı gösterilir.
+
+## 📊 Dashboard – Genel Bakış Ekranı
+<img width="962" height="569" alt="Ekran görüntüsü 2025-10-17 164516" src="https://github.com/user-attachments/assets/78d438ea-b525-4524-ba6e-40018d48991b" />
+
+Giriş işlemi başarıyla tamamlandıktan sonra kullanıcıyı karşılayan Genel Bakış (Dashboard) ekranı, finansal verilerin özetini sunar. Kullanıcıya özel karşılama, grafiklerle görselleştirilmiş veriler ve modüllere geçiş butonlarıyla zenginleştirilmiş bir arayüz içerir.
+
+### 🧩 Özellikler
+- 👤 Kullanıcı Karşılama: Oturum açan kullanıcı adıyla dinamik karşılama (Hoş geldin, beyza)
+- 💰 Toplam Bakiye: Tüm banka hesaplarındaki toplam para miktarı
+- 📥 Son Havale Tutarı: En son yapılan banka işleminin tutarı
+- 📊 Banka Bakiyeleri Grafiği: Bar chart ile banka bazlı para dağılımı
+- 🧁 Fatura Durumları Grafiği: Doughnut chart ile fatura türlerine göre tutar analizi
+- 🔄 Dinamik Fatura Bilgisi: Timer ile döngüsel olarak gösterilen fatura tutarları
+- 🧭 Modül Geçişleri: Bankalar, Faturalar, Giderler, İşlemler ve Ayarlar formlarına geçiş
