@@ -12,20 +12,20 @@ Bu proje, finansal kontrol sistemine kullanıcı girişi sağlayan bir Windows F
 - Başarılı giriş sonrası kullanıcı nesnesinin saklanması
 - DialogResult.OK ile form geçiş kontrolü
 
-## 🧠 Kullanılan Teknolojiler
+### 🧠 Kullanılan Teknolojiler
 -C#   Windows Forms uygulaması geliştirme dili
 -Entity Framework   Veritabanı işlemleri için ORM teknolojisi
 -LINQ   Veritabanı sorguları için güçlü sorgu dili
 
 
-## 🚀 Giriş Akışı
+### 🚀 Giriş Akışı
 - Kullanıcı adı ve şifre girilir.
 - Boş alan kontrolü yapılır.
 - Veritabanında eşleşen kullanıcı aranır.
 - Giriş başarılıysa LoggedInUser atanır ve form kapanır.
 - Giriş başarısızsa uyarı mesajı gösterilir.
 
-## 📊 Dashboard – Genel Bakış Ekranı
+# 📊 Dashboard – Genel Bakış Ekranı
 <img width="962" height="569" alt="Ekran görüntüsü 2025-10-17 164516" src="https://github.com/user-attachments/assets/78d438ea-b525-4524-ba6e-40018d48991b" />
 
 Giriş işlemi başarıyla tamamlandıktan sonra kullanıcıyı karşılayan Genel Bakış (Dashboard) ekranı, finansal verilerin özetini sunar. Kullanıcıya özel karşılama, grafiklerle görselleştirilmiş veriler ve modüllere geçiş butonlarıyla zenginleştirilmiş bir arayüz içerir.
@@ -57,7 +57,7 @@ Form Geçişleri - Her modül için ShowDialog() ile geçiş yapılır ve kullan
 
 Bu ekran, kullanıcının sahip olduğu banka hesaplarını ve her birinin bakiyesini görsel olarak sunar. Renkli kutucuklarla sadeleştirilmiş arayüz, finansal durumu hızlıca analiz etmeyi sağlar.
 
-## 🧩 Özellikler
+### 🧩 Özellikler
 - 👤 Kullanıcı Karşılama: Oturum açan kullanıcı adıyla dinamik selamlama (Hoş geldin, beyza)
 - 💳 Banka Bazlı Bakiye Gösterimi: Her banka için ayrı kutucukta bakiye bilgisi
 - 🎨 Renk Kodlaması: Görsel ayrım için farklı renklerde kutucuklar
@@ -80,7 +80,7 @@ Formlar Arası Geçiş - ShowDialog() ile kullanıcı nesnesi aktarılır ve ge�
 
 Bu ekran, kullanıcıların çeşitli fatura işlemlerini gerçekleştirebildiği kapsamlı bir arayüz sunar. Yeni fatura ekleme, mevcut faturaları listeleme, silme ve güncelleme gibi işlemler Entity Framework üzerinden doğrudan veritabanına bağlanarak yapılır.
 
-## 🧩 Özellikler
+### 🧩 Özellikler
 - 📋 Fatura Listesi: Tüm fatura kayıtları DataGridView ile listelenir
 - ➕ Yeni Fatura Ekleme: Başlık, tutar ve periyot bilgileriyle kayıt oluşturulur
 - 🗑️ Fatura Silme: ID’ye göre fatura silinir
@@ -108,7 +108,7 @@ Formlar Arası Geçiş - ShowDialog() ile kullanıcı nesnesi aktarılır ve ge�
 
 Bu ekran, kullanıcıların banka hesapları üzerinden para transferi yapabildiği ve geçmiş işlemleri görüntüleyebildiği bir modüldür. Hem işlem oluşturma hem de işlem silme gibi temel finansal operasyonlar Entity Framework üzerinden gerçekleştirilir.
 
-## 🧩 Özellikler
+### 🧩 Özellikler
 - 🏦 Banka Bilgileri: Ekran açıldığında tüm banka hesapları ve bakiyeleri listelenir
 - 📋 İşlem Listesi: “Listele” butonuna basıldığında yapılan tüm havale işlemleri detaylı şekilde gösterilir
 - 💸 Para Gönderme: Seçilen banka ve alıcıya açıklama ile birlikte havale yapılabilir
@@ -138,7 +138,7 @@ Güvenlik Kontrolü - Kullanıcı kendine para gönderemez, alıcı doğrulamas�
 
 Bu ekran, kullanıcıların gerçekleştirdiği para transferlerini detaylı şekilde listeleyen ve işlem yönetimi sağlayan bir modüldür. Her işlemde gönderici, alıcı, açıklama, tutar, tarih ve işlem yapılan banka bilgileri yer alır. Aynı zamanda işlem sonrası bankada kalan bakiye de takip edilir.
 
-## 🧩 Özellikler
+### 🧩 Özellikler
 - 📋 İşlem Listesi: Gönderilen tüm havale işlemleri detaylı şekilde listelenir
 - 👤 Gönderici ve Alıcı Bilgisi: Her işlemde hem gönderen hem de alıcının adı görünür
 - 🏦 Banka Bilgisi: İşlemin yapıldığı banka adı ve işlem sonrası kalan bakiye (Point) gösterilir
@@ -166,7 +166,7 @@ Güvenlik Kontrolü - Kullanıcı kendine para gönderemez, alıcı adı ve ID e
 
 Bu modül, kullanıcının gerçekleştirdiği son havale ve ödeme işlemlerini ayrı panellerde göstererek finansal geçmişin hızlıca analiz edilmesini sağlar. Her işlem için tutar, tarih ve açıklama bilgileri görsel olarak sunulur.
 
-## 🧩 Özellikler
+### 🧩 Özellikler
 - 💸 Son Havale Hareketleri: En son 10 havale işlemi, tutar ve tarih bilgisiyle birlikte listelenir
 - 🧾 Son Ödeme Hareketleri: En son 10 harcama işlemi, açıklama ve tutar bilgisiyle birlikte gösterilir
 - 📅 Tarih Formatlama: Tarihler ToShortDateString() ile okunabilir biçimde sunulur
@@ -186,7 +186,7 @@ Görsel Ayrıştırma - Havale ve ödeme işlemleri ayrı bölümlerde sunulur
 
 Bu modül, kullanıcının giriş bilgilerini (kullanıcı adı ve şifre) güncellemesini sağlar. Basit ve kullanıcı dostu arayüzüyle, güvenli ve doğrulanmış bir şekilde değişiklik yapılmasına olanak tanır.
 
-## 🧩 Özellikler
+### 🧩 Özellikler
 - ✏️ Kullanıcı Adı ve Şifre Güncelleme: Yeni bilgiler girilerek mevcut kullanıcı hesabı güncellenebilir
 - 🔐 Boş Alan Kontrolü: Alanlar boş bırakıldığında uyarı verilir
 - 🧠 Bilgi Eşleşme Kontrolü: Girilen bilgiler mevcut kayıtla aynıysa güncelleme yapılmaz
@@ -208,7 +208,7 @@ UI Feedback - MessageBox ile kullanıcıya işlem durumu bildirilir
 # 🚪 Çıkış – Uygulamadan Güvenli Ayrılma
 Uygulamanın sol menüsünde yer alan “Çıkış Yap” butonu, kullanıcıların oturumu sonlandırarak uygulamadan güvenli şekilde çıkmasını sağlar. Bu işlem, form geçişleriyle değil doğrudan uygulamanın kapanmasıyla gerçekleştirilir.
 
-## 🧩 Özellikler
+### 🧩 Özellikler
 - 🔒 Oturum Sonlandırma: Kullanıcı uygulamayı kapatarak oturumunu sonlandırır
 - 🧼 Bellek Temizliği: Formlar kapatılır, kaynaklar serbest bırakılır
 - 🧭 Kolay Erişim: Sol menüde sabit konumda yer alı
