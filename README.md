@@ -131,7 +131,7 @@ Güvenlik Kontrolü - Kullanıcı kendine para gönderemez, alıcı doğrulamas�
 - Kullanıcı isterse kendi işlemlerini seçerek silebilir
 
 
-# 🔁 Giderler – Havale İşlemleri ve Banka Bakiye Takib
+# 🔁 Giderler – Havale İşlemleri ve Banka Bakiye Takip
 
 <img width="959" height="567" alt="Ekran görüntüsü 2025-10-17 170409" src="https://github.com/user-attachments/assets/aa78988a-961a-423b-8491-35023acad551" />
 
